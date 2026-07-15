@@ -1,0 +1,886 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thomas Benameur | Développeur Web Fullstack</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&amp;family=Nunito:ital,wght@0,400;0,600;0,700;1,600&amp;family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap"
+      rel="stylesheet"
+    />
+    <!-- Styles externes -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Blobs de fond réactifs à la souris -->
+    <div class="blob-field">
+      <div class="blob blob1" id="blob1"></div>
+      <div class="blob blob2" id="blob2"></div>
+      <div class="blob blob3" id="blob3"></div>
+    </div>
+
+    <!-- Curseur personnalisé -->
+    <div id="cursor"></div>
+
+    <nav id="nav">
+      <div class="nav-logo">TB<span>.</span></div>
+      <div class="nav-links">
+        <a href="#about">À propos</a>
+        <a href="#experience">Parcours</a>
+        <a href="#projects">Projets</a>
+        <a href="#skills">Compétences</a>
+        <a href="#contact">Contact</a>
+        <a href="index-en.html" class="lang-switch">EN</a>
+      </div>
+    </nav>
+
+    <!-- ==================== HERO ==================== -->
+    <section class="hero" id="top">
+      <div class="hero-grid">
+        <div>
+          <div class="eyebrow">
+            📍 Montpellier · à la recherche d'un stage dev web
+          </div>
+          <h1>
+            <div class="word">
+              <span class="delay-05">Développeur</span>
+            </div>
+            <br />
+            <div class="word">
+              <span class="delay-15 hl">Web</span>
+            </div>
+            <div class="word">
+              <span class="delay-2">Fullstack</span>
+            </div>
+            <br />
+            <div class="word">
+              <span class="delay-35">en</span>
+            </div>
+            <div class="word">
+              <span class="delay-4 hl">formation.</span>
+            </div>
+            <br />
+            <div class="word">
+              <span class="delay-5">Junior</span>
+            </div>
+            <div class="word">
+              <span class="delay-55">en</span>
+            </div>
+            <div class="word">
+              <span class="delay-6">dev,</span>
+            </div>
+            <div class="word">
+              <span class="delay-65 hl">senior</span>
+            </div>
+            <div class="word">
+              <span class="delay-7">en</span>
+            </div>
+            <div class="word">
+              <span class="delay-75">tout</span>
+            </div>
+            <div class="word">
+              <span class="delay-8">le</span>
+            </div>
+            <div class="word">
+              <span class="delay-85">reste.</span>
+            </div>
+          </h1>
+          <p class="hero-sub">
+            Thomas Benameur, développeur web fullstack en formation (JavaScript,
+            Node.js, UI/UX), à la recherche d'un stage pour mettre en pratique
+            ce que j'apprends. Le code, je l'apprends. La rigueur et le sens du
+            détail, je les ai déjà.
+          </p>
+          <div class="hero-cta">
+            <a
+              href="#projects"
+              class="btn btn-primary btn-magnet"
+              data-cursor="big"
+              >Voir mes projets →</a
+            >
+            <a
+              href="#contact"
+              class="btn btn-outline btn-magnet"
+              data-cursor="big"
+              >On discute d'un stage ?</a
+            >
+          </div>
+        </div>
+        <div class="hero-visual">
+          <img
+            src="/src/Portrait-TB.png"
+            alt="Thomas Benameur"
+            class="hero-portrait"
+          />
+          <!-- Mini terminal easter egg, rempli dynamiquement par script.js -->
+          <div class="term">
+            <div class="term-bar">
+              <span class="term-dot"></span><span class="term-dot"></span
+              ><span class="term-dot"></span>
+            </div>
+            <div class="term-body" id="termBody"></div>
+          </div>
+          <div class="term-hint">psst, clique-moi 👀</div>
+        </div>
+      </div>
+      <div class="scroll-hint">
+        <div class="bar"></div>
+        Scroll
+      </div>
+    </section>
+
+    <!-- ==================== ABOUT ==================== -->
+    <section id="about">
+      <div class="sec-head reveal">
+        <span class="sec-num sec-num--coral">01 · À propos</span>
+        <h2>
+          Développeur web en formation,
+          <span class="serif">expérience humaine en plus.</span>
+        </h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            Je me forme actuellement en développement web fullstack (JavaScript,
+            Node.js, Java, SQL) chez Diginamic, avec une sensibilité
+            particulière pour l'UI/UX design, validée par un certificat Google.
+            Je cherche un stage pour appliquer ces compétences sur de vrais
+            projets, en équipe.
+          </p>
+          <p>
+            En parallèle, j'ai co-fondé
+            <strong class="highlight-pill">Kiff Kiff</strong>, une marque pour
+            laquelle j'ai développé le site Shopify (thème customisé en Liquid),
+            un vrai terrain de jeu pour allier code et univers créatif.
+          </p>
+          <p>
+            Avant le code, 10 ans de gestion d'équipe et de relation client à
+            Londres et Bruxelles. Autonomie, rigueur, curiosité et envie
+            d'apprendre : ce que ces années m'ont appris se transpose
+            directement à un poste de développeur en stage.
+            <span class="impact-line"
+              >Je porte une attention particulière pour les projets porteurs de
+              sens.</span
+            >
+          </p>
+          <div class="stat-row">
+            <div class="stat stat-violet">
+              <b>10</b><span>ans d'expérience pro transférable</span>
+            </div>
+            <div class="stat stat-mustard">
+              <b>UX</b><span>certifié Google, en plus du code</span>
+            </div>
+            <div class="stat stat-coral">
+              <b>2</b
+              ><span>langues : natif en français, courant en anglais</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-card reveal">
+          <h4>En un coup d'œil</h4>
+          <div class="lang-pills">
+            <span class="lang-pill lang-pill-pink">💻 Dev web fullstack</span>
+            <span class="lang-pill lang-pill-mint">🎨 UI/UX design</span>
+            <span class="lang-pill lang-pill-peach">🇫🇷 Français natif</span>
+            <span class="lang-pill lang-pill-green">🇬🇧 Anglais courant</span>
+            <span class="lang-pill lang-pill-lilac">📍 Montpellier</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== EXPERIENCE ==================== -->
+    <section id="experience">
+      <div class="sec-head reveal">
+        <span class="sec-num sec-num--violet">02 · Parcours</span>
+        <h2>
+          Mon expérience
+          <span class="serif serif--coral">professionnelle</span>
+        </h2>
+        <p class="exp-intro">
+          Dix ans en gestion d'équipe et relation client, avant de me réorienter
+          vers le développement web. Explore mon parcours en cliquant, étape par
+          étape.
+          <svg
+            overflow="visible"
+            xmlns="http://www.w3.org/2000/svg"
+            width="35"
+            height="35"
+            viewBox="-6 -6 36 36"
+            fill="none"
+            style="
+              display: inline-block;
+              vertical-align: middle;
+              margin-left: 4px;
+            "
+          >
+            <style>
+              .mw {
+                stroke-dasharray: 48;
+                stroke-dashoffset: 48;
+                animation: draw 0.5s ease forwards;
+              }
+              .mwh {
+                opacity: 0;
+                animation: wandTap 0.5s cubic-bezier(0.34, 1.56, 0.64, 1)
+                  forwards;
+                transform-origin: 12px 12px;
+              }
+              .mws {
+                opacity: 0;
+                animation: twinkle 1.05s ease-in-out 0.3s infinite;
+                transform-origin: 6px 5px;
+              }
+              @keyframes draw {
+                to {
+                  stroke-dashoffset: 0;
+                }
+              }
+              @keyframes wandTap {
+                from {
+                  transform: translate(3px, -3px) rotate(8deg);
+                  opacity: 0;
+                }
+                to {
+                  transform: translate(0, 0) rotate(0);
+                  opacity: 1;
+                }
+              }
+              @keyframes twinkle {
+                0%,
+                100% {
+                  transform: scale(0.65);
+                  opacity: 0.35;
+                }
+                50% {
+                  transform: scale(1.15) rotate(12deg);
+                  opacity: 1;
+                }
+              }
+            </style>
+            <g class="mwh">
+              <path
+                class="mw"
+                d="M5 19 19 5"
+                stroke="#ff6f91"
+                stroke-width="1"
+                stroke-linecap="round"
+              />
+              <path
+                d="M16.5 3.5 20.5 7.5 18.5 9.5 14.5 5.5 16.5 3.5Z"
+                stroke="#ff6f91"
+                stroke-width="1"
+                stroke-linejoin="round"
+                fill="#ff6f9118"
+              />
+            </g>
+            <g
+              class="mws"
+              stroke="#ff6f91"
+              stroke-width="1"
+              stroke-linecap="round"
+            >
+              <path d="M6 2v3M6 8v2M2 6h3M8 6h3" />
+              <path d="M15 14v2M15 20v1M12 18h1.5M17 18h1.5" />
+            </g>
+          </svg>
+        </p>
+      </div>
+      <div class="exp-grid reveal" id="expGrid">
+        <div class="exp-card">
+          <div class="exp-card-inner">
+            <div class="exp-face exp-front">
+              <div>
+                <div class="exp-date">Juil 2025 - Mai 2026</div>
+                <div class="exp-role">Co-fondateur &amp; Opérations</div>
+                <div class="exp-org">Kiff Kiff · Montpellier</div>
+              </div>
+              <div class="exp-flip-hint">Voir les coulisses ↻</div>
+            </div>
+            <div class="exp-face exp-back">
+              <div class="exp-date">Juil 2025 - Mai 2026</div>
+              <div class="exp-role">Co-fondateur &amp; Opérations</div>
+              <div class="exp-org">Kiff Kiff · Montpellier, hybride</div>
+              <div class="exp-back-desc">
+                Marque de lifestyle et décoration construite autour du sourcing
+                direct avec des artisans au Népal, en Inde, au Pakistan et en
+                Thaïlande. Gestion de la boutique Shopify (customisations front,
+                logistique), stratégie de contenu et réseaux sociaux.
+              </div>
+              <div class="exp-back-skills">
+                <span class="tag">E-commerce</span
+                ><span class="tag tag-green">Social Media</span
+                ><span class="tag tag-plum">Content Strategy</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="exp-card">
+          <div class="exp-card-inner">
+            <div class="exp-face exp-front">
+              <div>
+                <div class="exp-date">Sept 2023 - Juil 2025</div>
+                <div class="exp-role">Reconversion professionnelle</div>
+                <div class="exp-org">
+                  Autodidacte &amp; formation · Bruxelles
+                </div>
+              </div>
+              <div class="exp-flip-hint">Voir les coulisses ↻</div>
+            </div>
+            <div class="exp-face exp-back">
+              <div class="exp-date">Sept 2023 - Juil 2025</div>
+              <div class="exp-role">Reconversion professionnelle</div>
+              <div class="exp-org">Autodidacte &amp; formation · Bruxelles</div>
+              <div class="exp-back-desc">
+                Transition vers le développement web en combinant apprentissage
+                autodidacte (fondamentaux front-end, principes UX) et suivi de
+                formations structurées, en préparation du bootcamp FullStack à
+                La Capsule.
+              </div>
+              <div class="exp-back-skills">
+                <span class="tag">Front-end</span
+                ><span class="tag tag-green">UX</span
+                ><span class="tag tag-plum">Auto-formation</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="exp-card">
+          <div class="exp-card-inner">
+            <div class="exp-face exp-front">
+              <div>
+                <div class="exp-date">Jan 2022 - Sept 2023</div>
+                <div class="exp-role">Customer Care Manager</div>
+                <div class="exp-org">Heetch · Bruxelles</div>
+              </div>
+              <div class="exp-flip-hint">Voir les coulisses ↻</div>
+            </div>
+            <div class="exp-face exp-back">
+              <div class="exp-date">Jan 2022 - Sept 2023</div>
+              <div class="exp-role">Customer Care Manager</div>
+              <div class="exp-org">Heetch · Bruxelles</div>
+              <div class="exp-back-desc">
+                Encadrement d'une équipe d'une dizaine de personnes permanentes
+                et contractuelles. Refonte des process internes pour améliorer
+                l'efficacité et la qualité de réponse, en gardant l'expérience
+                utilisateur au centre.
+                <ul>
+                  <li>-10% de temps d'attente client</li>
+                  <li>-20% de taux de contact</li>
+                </ul>
+              </div>
+              <div class="exp-back-skills">
+                <span class="tag tag-green">Team Leadership</span
+                ><span class="tag">Management</span
+                ><span class="tag tag-plum">Process</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="exp-card">
+          <div class="exp-card-inner">
+            <div class="exp-face exp-front">
+              <div>
+                <div class="exp-date">Fév 2020 - Jan 2022</div>
+                <div class="exp-role">Customer Care Agent</div>
+                <div class="exp-org">Heetch · Bruxelles</div>
+              </div>
+              <div class="exp-flip-hint">Voir les coulisses ↻</div>
+            </div>
+            <div class="exp-face exp-back">
+              <div class="exp-date">Fév 2020 - Jan 2022</div>
+              <div class="exp-role">Customer Care Agent</div>
+              <div class="exp-org">Heetch · Bruxelles</div>
+              <div class="exp-back-desc">
+                Traitement quotidien des demandes clients sur plusieurs canaux,
+                avec un fort volume à gérer dans un contexte fast-paced.
+                Contribution active à l'optimisation des process internes et à
+                l'amélioration continue de la qualité de réponse, en identifiant
+                les irritants récurrents côté utilisateurs.
+              </div>
+              <div class="exp-back-skills">
+                <span class="tag tag-plum">Relation client</span
+                ><span class="tag">Support</span
+                ><span class="tag tag-green">Amélioration continue</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="exp-card">
+          <div class="exp-card-inner">
+            <div class="exp-face exp-front">
+              <div>
+                <div class="exp-date">Fév 2017 - Oct 2018</div>
+                <div class="exp-role">
+                  Administrative Assistant &amp; Area Manager
+                </div>
+                <div class="exp-org">Change Please · Londres</div>
+              </div>
+              <div class="exp-flip-hint">Voir les coulisses ↻</div>
+            </div>
+            <div class="exp-face exp-back">
+              <div class="exp-date">Fév 2017 - Oct 2018</div>
+              <div class="exp-role">
+                Administrative Assistant &amp; Area Manager
+              </div>
+              <div class="exp-org">Change Please · Londres</div>
+              <div class="exp-back-desc">
+                Change Please forme des personnes sans-abri au métier de barista
+                pour faciliter leur réinsertion. Coordination des opérations sur
+                plusieurs sites, soutien administratif et émotionnel aux
+                bénéficiaires, développement du programme de formation.
+              </div>
+              <span class="exp-back-badge"
+                >🏆 Best Social Enterprise UK 2018</span
+              >
+              <div class="exp-back-skills">
+                <span class="tag tag-plum">Entreprise sociale</span
+                ><span class="tag tag-green">Formation</span
+                ><span class="tag">Coordination</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="exp-card">
+          <div class="exp-card-inner">
+            <div class="exp-face exp-front">
+              <div>
+                <div class="exp-date">Oct 2018 - Déc 2019</div>
+                <div class="exp-role">Team Assistant</div>
+                <div class="exp-org">C&amp;E Private Staff · Londres</div>
+              </div>
+              <div class="exp-flip-hint">Voir les coulisses ↻</div>
+            </div>
+            <div class="exp-face exp-back">
+              <div class="exp-date">Oct 2018 - Déc 2019</div>
+              <div class="exp-role">Team Assistant</div>
+              <div class="exp-org">C&amp;E Private Staff · Londres</div>
+              <div class="exp-back-desc">
+                Mise en place de A à Z des process de recrutement et des bases
+                RH d'une agence tout juste lancée. Cycle complet de recrutement
+                et coordination de l'agenda de direction.
+              </div>
+              <div class="exp-back-skills">
+                <span class="tag tag-green">Recrutement</span
+                ><span class="tag tag-plum">RH</span
+                ><span class="tag">Administration</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="exp-card">
+          <div class="exp-card-inner">
+            <div class="exp-face exp-front">
+              <div>
+                <div class="exp-date">Fév 2014 - Fév 2017</div>
+                <div class="exp-role">Coffee Shop Manager</div>
+                <div class="exp-org">Canada Water Café · Londres</div>
+              </div>
+              <div class="exp-flip-hint">Voir les coulisses ↻</div>
+            </div>
+            <div class="exp-face exp-back">
+              <div class="exp-date">Fév 2014 - Fév 2017</div>
+              <div class="exp-role">Coffee Shop Manager</div>
+              <div class="exp-org">Canada Water Café · Londres</div>
+              <div class="exp-back-desc">
+                Gestion complète d'un coffee shop indépendant : recrutement,
+                formation, opérations quotidiennes. Ouverture du lieu et
+                constitution de l'équipe from scratch.
+              </div>
+              <div class="exp-back-skills">
+                <span class="tag">Team Leadership</span
+                ><span class="tag tag-green">Opérations</span
+                ><span class="tag tag-plum">Recrutement</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="exp-card">
+          <div class="exp-card-inner">
+            <div class="exp-face exp-front">
+              <div>
+                <div class="exp-date">Sept 2018 - Juil 2019</div>
+                <div class="exp-role">
+                  Bénévolat, Executive Personal Assistant
+                </div>
+                <div class="exp-org">Action on Hearing Loss</div>
+              </div>
+              <div class="exp-flip-hint">Voir les coulisses ↻</div>
+            </div>
+            <div class="exp-face exp-back">
+              <div class="exp-date">Sept 2018 - Juil 2019</div>
+              <div class="exp-role">
+                Executive Personal Assistant, bénévolat
+              </div>
+              <div class="exp-org">Action on Hearing Loss · Londres</div>
+              <div class="exp-back-desc">
+                Association accompagnant les personnes sourdes et malentendantes
+                vers l'autonomie.
+              </div>
+              <div class="exp-back-skills">
+                <span class="tag">Bénévolat</span
+                ><span class="tag tag-green">Support administratif</span
+                ><span class="tag tag-plum">Accessibilité</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==================== PROJECTS ==================== -->
+<section id="projects">
+  <div class="sec-head reveal">
+    <span class="sec-num sec-num--mustard">03 · Projets</span>
+    <h2>Ce que j'ai <span class="serif">construit</span></h2>
+    <p>
+      Des TPs d'école à un vrai site e-commerce en production : un peu de
+      front, un peu de back, toujours une pointe d'UX. Glisse pour voir les
+      projets.
+    </p>
+  </div>
+
+  <div class="carousel-wrap reveal">
+    <div class="carousel-track" id="carTrack">
+      <div class="proj-card feature" data-tilt>
+        <div class="proj-visual">
+          <img src="src/images-git/kiff-kiff.png" alt="Kiff Kiff, boutique Shopify" class="proj-img">
+          <span>kiffkiffagency.com</span>
+        </div>
+        <div class="proj-tag">Projet phare · En production</div>
+        <h3>Kiff Kiff, boutique Shopify</h3>
+        <p>
+          E-commerce réel construit sur le thème Shopify Creative, avec
+          customisations front sur-mesure : double hero section, grille
+          best-sellers responsive, scrollbar custom, amélioration des
+          collections.
+        </p>
+        <div class="proj-stack">
+          <span class="tag">Shopify Liquid</span><span class="tag">CSS</span
+          ><span class="tag">JS</span>
+        </div>
+        <a
+          href="https://kiffkiffagency.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="proj-link"
+          >Voir le site →</a
+        >
+      </div>
+
+      <div class="proj-card" data-tilt>
+        <div class="proj-visual">
+          <img src="src/images-git/atelier-ceramique.png" alt="Atelier Céramique Lyon" class="proj-img">
+          <span>Atelier Céramique</span>
+        </div>
+        <div class="proj-tag">HTML/CSS · Bootstrap 5</div>
+        <h3>Atelier Céramique Lyon</h3>
+        <p>
+          Site vitrine trois pages pour une boutique de céramiques,
+          variables CSS custom et système d'icônes.
+        </p>
+        <div class="proj-stack">
+          <span class="tag">Bootstrap 5</span><span class="tag">CSS Vars</span>
+        </div>
+        <a
+          href="https://github.com/TomB-S"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="proj-link"
+          >Voir le code →</a
+        >
+      </div>
+
+      <div class="proj-card" data-tilt>
+        <div class="proj-visual">
+          <img src="src/images-git/qr-explore.png" alt="QR Explore" class="proj-img">
+          <span>QR Explore</span>
+        </div>
+        <div class="proj-tag">Node.js natif</div>
+        <h3>QR Explore</h3>
+        <p>
+          Application construite avec les modules natifs de Node.js
+          uniquement, sans framework, connectée à json-server.
+        </p>
+        <div class="proj-stack">
+          <span class="tag">Node.js</span
+          ><span class="tag">HTTP natif</span>
+        </div>
+        <a
+          href="https://github.com/TomB-S"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="proj-link"
+          >Voir le code →</a
+        >
+      </div>
+
+      <div class="proj-card" data-tilt>
+        <div class="proj-visual">
+          <img src="src/images-git/recencement.png" alt="Recensement Population" class="proj-img">
+          <span>Recensement</span>
+        </div>
+        <div class="proj-tag">Java · OOP</div>
+        <h3>Recensement Population</h3>
+        <p>
+          Manipulation de classes abstraites, ArrayList et HashMap pour
+          traiter et regrouper des données de population depuis des
+          fichiers.
+        </p>
+        <div class="proj-stack">
+          <span class="tag">Java</span><span class="tag">NIO2</span
+          ><span class="tag">OOP</span>
+        </div>
+        <a
+          href="https://github.com/TomB-S"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="proj-link"
+          >Voir le code →</a
+        >
+      </div>
+    </div>
+
+    <div class="carousel-nav">
+      <div class="swipe-hint">← fais glisser pour explorer →</div>
+      <div class="car-progress"><b id="carIdx">1</b> / 4</div>
+      <div class="carousel-btns">
+        <div class="car-btn" id="carPrev" data-cursor="big">←</div>
+        <div class="car-btn" id="carNext" data-cursor="big">→</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+    
+</section> <!-- ==================== SKILLS ==================== -->
+    <section id="skills">
+      <div class="sec-head reveal">
+        <span class="sec-num sec-num--coral">04 · Compétences</span>
+        <h2>Ma boîte à <span class="serif">outils</span></h2>
+      </div>
+      <div class="reveal">
+        <div class="skills-cat">
+          <h4>Langages &amp; Frameworks</h4>
+          <div class="gauge-grid">
+            <div class="gauge-row">
+              <div class="gauge-label">
+                <span>JavaScript</span><span>Solide</span>
+              </div>
+              <div class="gauge-track">
+                <div class="gauge-fill" data-level="80"></div>
+              </div>
+            </div>
+            <div class="gauge-row">
+              <div class="gauge-label">
+                <span>Node.js / Express</span><span>Bonnes bases</span>
+              </div>
+              <div class="gauge-track">
+                <div class="gauge-fill" data-level="60"></div>
+              </div>
+            </div>
+            <div class="gauge-row">
+              <div class="gauge-label">
+                <span>Java</span><span>Bonnes bases</span>
+              </div>
+              <div class="gauge-track">
+                <div class="gauge-fill" data-level="60"></div>
+              </div>
+            </div>
+            <div class="gauge-row">
+              <div class="gauge-label">
+                <span>SQL</span><span>Bonnes bases</span>
+              </div>
+              <div class="gauge-track">
+                <div class="gauge-fill" data-level="65"></div>
+              </div>
+            </div>
+            <div class="gauge-row">
+              <div class="gauge-label">
+                <span>HTML / CSS</span><span>Solide</span>
+              </div>
+              <div class="gauge-track">
+                <div class="gauge-fill" data-level="85"></div>
+              </div>
+            </div>
+            <div class="gauge-row">
+              <div class="gauge-label">
+                <span>Bootstrap</span><span>Bonnes bases</span>
+              </div>
+              <div class="gauge-track">
+                <div class="gauge-fill" data-level="70"></div>
+              </div>
+            </div>
+            <div class="gauge-row">
+              <div class="gauge-label">
+                <span>UI/UX Design</span><span>Bonnes bases</span>
+              </div>
+              <div class="gauge-track">
+                <div class="gauge-fill" data-level="60"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="skills-cat">
+          <h4>Outils</h4>
+          <div class="skills-list">
+            <span class="skill-pill outil">Git / GitHub</span
+            ><span class="skill-pill outil">Thunder Client</span
+            ><span class="skill-pill outil">MySQL Workbench</span>
+            <span class="skill-pill outil">Shopify</span
+            ><span class="skill-pill outil">IntelliJ</span>
+          </div>
+        </div>
+        <div class="skills-cat">
+          <h4>Savoir-être hérités de 10 ans de management</h4>
+          <div class="skills-list">
+            <span class="skill-pill soft">Leadership d'équipe</span
+            ><span class="skill-pill soft">Gestion de projet</span>
+            <span class="skill-pill soft">Relation client</span
+            ><span class="skill-pill soft">Formation &amp; encadrement</span
+            ><span class="skill-pill soft">Amélioration continue</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== EDUCATION (onglets) ==================== -->
+    <section id="education">
+      <div class="sec-head reveal">
+        <span class="sec-num sec-num--mustard">05 · Formation</span>
+        <h2>Formation &amp; <span class="serif">certifications</span></h2>
+      </div>
+
+      <div class="reveal">
+        <div class="edu-tabs">
+          <div class="edu-tab active" data-tab="formation">
+            Formation en cours
+          </div>
+          <div class="edu-tab" data-tab="certifs">Certifications</div>
+          <div class="edu-tab" data-tab="academique">Parcours académique</div>
+        </div>
+
+        <div class="edu-panels">
+          <div class="edu-panel active" id="panel-formation">
+            <div class="edu-item">
+              <div class="edu-date">2026 - 2027</div>
+              <div>
+                <h4>CDA Concepteur Développeur d'Applications</h4>
+                <div class="edu-org">Diginamic · RNCP niveau 6</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="edu-panel" id="panel-certifs">
+            <div class="edu-item">
+              <div class="edu-date">Jan 2026</div>
+              <div>
+                <h4>Introduction to HTML, CSS &amp; JavaScript</h4>
+                <div class="edu-org">IBM</div>
+              </div>
+            </div>
+            <div class="edu-item">
+              <div class="edu-date">Nov 2025</div>
+              <div>
+                <h4>Introduction to Software Engineering</h4>
+                <div class="edu-org">IBM</div>
+              </div>
+            </div>
+            <div class="edu-item">
+              <div class="edu-date">2024</div>
+              <div>
+                <h4>Career Certificate UX Design</h4>
+                <div class="edu-org">Google</div>
+              </div>
+            </div>
+            <div class="edu-item">
+              <div class="edu-date">2023 - 2024</div>
+              <div>
+                <h4>FullStack Developer Web &amp; Mobile</h4>
+                <div class="edu-org">La Capsule · Bootcamp, Bruxelles</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="edu-panel" id="panel-academique">
+            <div class="edu-item">
+              <div class="edu-date">2011 - 2012</div>
+              <div>
+                <h4>Bachelor of Business Studies</h4>
+                <div class="edu-org">University of the West of Scotland</div>
+              </div>
+            </div>
+            <div class="edu-item">
+              <div class="edu-date">2009 - 2011</div>
+              <div>
+                <h4>DUT Techniques de Commercialisation</h4>
+                <div class="edu-org">
+                  Université de la Méditerranée, Aix-en-Provence
+                </div>
+              </div>
+            </div>
+            <div class="edu-item">
+              <div class="edu-date">2008 - 2009</div>
+              <div>
+                <h4>Baccalauréat Économique et Social</h4>
+                <div class="edu-org">Lycée Joseph Vallot, Lodève</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CONTACT ==================== -->
+    <section id="contact" class="contact reveal">
+      <span class="sec-num sec-num--violet">06 · Contact</span>
+      <h2>Discutons de mon <span class="serif">stage.</span></h2>
+      <p>
+        Je recherche activement un stage de développement web fullstack, avec
+        une dimension UI/UX si possible. Curieux, autonome et disponible
+        rapidement, j'ai hâte d'échanger sur vos projets.
+      </p>
+      <div class="contact-links">
+        <a
+          href="mailto:thomas.benameur@gmail.com"
+          class="btn btn-primary btn-magnet"
+          data-cursor="big"
+          >thomas.benameur@gmail.com</a
+        >
+        <a
+          href="https://linkedin.com/in/thomas-b-s"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn-outline btn-magnet btn-mustard"
+          data-cursor="big"
+          >LinkedIn</a
+        >
+        <a
+          href="https://github.com/TomB-S"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn-outline btn-magnet btn-coral"
+          data-cursor="big"
+          >GitHub</a
+        >
+      </div>
+    </section>
+
+    <footer>Thomas Benameur · Montpellier, France</footer>
+
+    <!-- Script externe -->
+    <script src="script.js"></script>
+  </body>
+</html>
